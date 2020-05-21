@@ -1,0 +1,27 @@
+/* Buttons */
+.btn-success {
+  background: $warning-light;
+  border: none;
+  font-size: $primary-font-size;
+  color: $main-ultra-light;
+
+  &:hover {
+    cursor: pointer;
+    background: $warning-dark;
+  }
+}
+
+// .btn-success-small {
+// }
+
+.btn-light {
+  background: $main-light;
+  border: none;
+  font-size: $primary-font-size;
+  color: $main-ultra-light;
+
+  &:hover {
+    cursor: pointer;
+    background: $main-dark;
+  }
+}

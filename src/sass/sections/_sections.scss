@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  font-family: $brand-font;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// SIDEBAR
+.aside {
+  position: fixed;
+  background: #191919;
+  height: 100%;
+  width: 200px;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  z-index: 2;
+}
+
+.aside_logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 0;
+  margin: 8px 0 20px 0;
+}
+
+.aside_logo i {
+  color: $main-light;
+}
+
+.aside_logo img {
+  width: 100px;
+}
+
+.aside_nav_links {
+  padding: 0;
+  margin: 0;
+}
+
+.aside_nav_links li a {
+  text-decoration: none;
+  color: $main-light;
+  font-weight: $font-light;
+  font-size: $aside-link;
+  display: block;
+  width: 100%;
+  padding: 10px 7px;
+  &:hover {
+    color: $main-lighten;
+    border-left: 2px solid $warning-light;
+    background-color: $main-dark;
+  }
+}
+
+.aside_nav_links li {
+  list-style: none;
+}
+
+// TOP BAR
+.top_bar {
+  height: 62px;
+  background: $color-white;
+}
+
+.nav_links {
+  line-height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top_bar ul li {
+  display: inline-block;
+  padding: 0 20px;
+  // height: 100%;
+  border-left: 2px solid $main-light;
+}
+
+.top_bar ul li a {
+  color: $main-light;
+  text-decoration: none;
+  position: relative;
+  font-size: $primary-font-size;
+}
+
+.icon-notification::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transform: translate(-20%, -20%);
+  content: '';
+  background: $warning-dark;
+}
+
+em {
+  color: $info-color;
+  font-style: normal;
+  font-size: $secondary-font;
+  font-weight: 300;
+}
+
+// MAIN
+
+section {
+  margin-top: 30px;
+  padding: 0;
+  background: $color-white;
+  box-shadow: -1px -1px 4px 1px $main-lighten;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1170px;
+  text-align: center;
+}
+
+main {
+  padding-top: 30px;
+  background: $main-ultra-light;
+}

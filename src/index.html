@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/16d35714cd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <aside class="aside">
+        <div class="aside_logo">
+            <img src="/images/logo.png" alt="">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <div class="aside_links">
+            <ul class="aside_nav_links">
+                <li>
+                    <a class="icon-general" href="#general">General</a>
+                </li>
+                <li>
+                    <a class="icon-details" href="#details">Details</a>
+                </li>
+                <li>
+                    <a class="icon-links" href="#links">Links</a>
+                </li>
+                <li>
+                    <a class="icon-banners" href="#banners">Banners</a>
+                </li>
+                <li>
+                    <a class="icon-personaldata" href="#personal-data">Personal Data</a>
+                </li>
+                <li>
+                    <a class="icon-postback" href="#postback">Postback</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <nav class="top_bar">
+        <ul class="nav_links">
+            <li>
+                <a class="icon-wallet" href="#wallet">$ 1,500.00
+                    <span class="icon-arrow-down-small"></span>
+                </a>
+            </li>
+            <li>
+                <a class="icon-notification" href="#notification"></a>
+            </li>
+            <li>
+                <a href="#login">
+                    <span class="icon-profile"></span>
+                    <em>Leonardo DiCaprio</em>
+                </a>
+            </li>
+            <li>
+                <a class="icon-quit" href="#logout"></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="general" class="general">
+                <h2>General Statistic</h2>
+                <div class="date-picker">
+                    <div class="input-container">
+                        <input name="date-from" type="date">
+                        <input name="date-for" type="date">
+                        <span class="icon-calendar"></span>
+                    </div>
+                    <button type="submit" class="btn icon-refresh"></button>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <table class="table col-sm-6 col-md-4">
+                            <tr class="table__row">
+                                <td class="table__title">Visit Signups</td>
+                                <td class="table__data">124</td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title">FTD</td>
+                                <td class="table__data">445</td>
+                            </tr>
+                        </table>
+                        <table class="table col-sm-6 col-md-4">
+                            <tr class="table__row">
+                                <td class="table__title">Net Deposit</td>
+                                <td class="table__data">564</td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title">Turn Over</td>
+                                <td class="table__data">432</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <h3>Sales chart</h3>
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
