@@ -49,6 +49,7 @@
   display: block;
   width: 100%;
   padding: 10px 7px;
+
   &:hover {
     color: $main-lighten;
     border-left: 2px solid $warning-light;
@@ -122,11 +123,10 @@ section {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 1170px;
   text-align: center;
 }
 
 main {
-  padding-top: 30px;
+  padding: 20px 20px 20px 220px;
   background: $main-ultra-light;
 }
