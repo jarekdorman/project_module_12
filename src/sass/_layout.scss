@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  section {
+    margin-top: 30px;
+    padding: 0;
+    background: $color-white;
+    box-shadow: -1px -1px 4px 1px $main-lighten;
+  }
+
+  main {
+    padding: 70px 20px 20px 220px;
+    background: $main-ultra-light;
+  }
+
+  .row {
+    display: flex;
+  }

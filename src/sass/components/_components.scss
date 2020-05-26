@@ -1,18 +1,30 @@
 /* Buttons */
 .btn-success {
-  background: $warning-light;
+  background: $warning-dark;
   border: none;
   font-size: $primary-font-size;
   color: $main-ultra-light;
+  padding: 10px 15px;
+  font-weight: 300;
 
   &:hover {
     cursor: pointer;
-    background: $warning-dark;
+    background: $warning-light;
   }
 }
 
-// .btn-success-small {
-// }
+.btn-success-small {
+  background: $warning-dark;
+  width: 46px;
+  height: 46px;
+  color: $color-white;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background: $warning-light;
+  }
+}
 
 .btn-light {
   background: $main-light;

@@ -8,6 +8,7 @@
 }
 
 // SIDEBAR
+
 .aside {
   position: fixed;
   background: #191919;
@@ -36,11 +37,6 @@
   width: 100px;
 }
 
-.aside_nav_links {
-  padding: 0;
-  margin: 0;
-}
-
 .aside_nav_links li a {
   text-decoration: none;
   color: $main-light;
@@ -62,9 +58,12 @@
 }
 
 // TOP BAR
+
 .top_bar {
   height: 62px;
   background: $color-white;
+  position: fixed;
+  width: 100%;
 }
 
 .nav_links {
@@ -78,7 +77,6 @@
 .top_bar ul li {
   display: inline-block;
   padding: 0 20px;
-  // height: 100%;
   border-left: 2px solid $main-light;
 }
 
@@ -109,24 +107,110 @@ em {
   font-weight: 300;
 }
 
-// MAIN
+/* GENERAL */
 
-section {
-  margin-top: 30px;
-  padding: 0;
-  background: $color-white;
-  box-shadow: -1px -1px 4px 1px $main-lighten;
+// date picker
+
+.date-picker {
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid $main-ultra-light;
+  border-top: 2px solid $main-ultra-light;
 }
 
-.container {
+.input-container {
+  border: 1px solid $main-light;
+  border-radius: 5px;
+  margin: 5px;
+
+  .icon-calendar {
+    color: $main-light;
+    padding-right: 10px;
+  }
+
+  input {
+    border: none;
+    padding: 10px;
+    color: $main-light;
+
+    &:nth-of-type(1) {
+      border-right: 1px solid $main-light;
+    }
+  }
+}
+
+// table chart
+
+.table {
+  color: $main-light;
   margin: 0 auto;
-  width: 100%;
+  width: 50%;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+
 }
 
-main {
-  padding: 20px 20px 20px 220px;
-  background: $main-ultra-light;
+.table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: $secondary-font;
+  text-align: center;
+
+  &__row {
+    border-bottom: 2px solid $main-ultra-light;
+    padding: 5px 0;
+    width: 100%;
+
+    &:hover {
+        background: $main-ultra-light;
+  
+        .table__icon {
+          opacity: 1;
+        }
+    }
+  }
+
+  td[class^='table__'] {
+    padding: 20px 10px;
+    width: 33%;
+    font-weight: 300;
+  }
+  &__title {
+    text-align: left;
+    font-size: $secondary-font;
+    font-weight: 600;
+  }
+
+  &__data {
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  &__icon {
+    opacity: 0;
+
+    > *:hover {
+      opacity: 1;
+      color: $warning-light;
+      cursor: pointer;
+    }
+  }
+}
+
+// graph
+
+.graph img {
+  width: 900px;
+  margin: 30px 0 80px 0;
+}
+
+// LINKS
+
+.table__link a {
+  text-decoration: none;
+  color: $info-color;
 }
