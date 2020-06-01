@@ -6,7 +6,9 @@
   color: $main-ultra-light;
   padding: 10px 15px;
   font-weight: 300;
-
+  width: 140px;
+  margin: 20px auto;
+  
   &:hover {
     cursor: pointer;
     background: $warning-light;
@@ -31,9 +33,18 @@
   border: none;
   font-size: $primary-font-size;
   color: $main-ultra-light;
+  padding: 10px 15px;
+  font-weight: 300;
+  width: 140px;
+  margin: 20px 0;
 
   &:hover {
     cursor: pointer;
     background: $main-dark;
   }
+}
+
+*:focus {
+  outline: none;
+
 }

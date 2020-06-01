@@ -1,0 +1,188 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .aside_logo i {
+    display: inline-block;
+  }
+
+  .aside {
+    left: -120px;
+  }
+
+  .aside_links {
+    opacity: 0;
+  }
+
+  .show {
+    transition: visibility 0.5s, linear 0.5s, opacity 0.5s;
+    z-index: 5;
+    left: 0px;
+    width: 50%;
+
+    .aside_logo img {
+      opacity: 1;
+      width: 150px;
+    }
+
+    .aside_links {
+      display: block;
+      opacity: 1;
+    }
+
+    ul li a {
+      padding: 20px 10px;
+      display: block;
+      font-size: 24px;
+    }
+  }
+
+  .aside_logo i {
+    font-size: 44px;
+  }
+
+  .aside_logo img {
+    opacity: 0;
+  }
+
+  main {
+    width: 100%;
+    padding: 70px 0 20px 80px;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .graph img {
+    width: 100%;
+    margin: 30px 0 80px 0;
+    padding: 0 20px;
+  }
+
+  .chart {
+    width: 100%;
+  }
+
+  .link_row {
+    width: 100%;
+  }
+  //   .top_bar {
+  //       display: none;
+  //   }
+}
+
+@media (max-width: 991px) {
+main {
+  padding: 70px 0 0 0;
+}
+  
+  .top_bar {
+    display: none;
+  }
+  
+  .aside {
+    height: 70px;
+    width: 100vw;
+    // left: 0;
+  }
+
+  .aside_logo {
+    margin: 0;
+    height: auto;
+    justify-content: space-between;
+    padding: 15px 15px;
+  }
+
+  .aside_logo i {
+    display: block;
+    font-size: 32px;
+  }
+
+  .aside_links {
+    opacity: 0;
+  }
+
+  .show {
+    transition: visibility 0.5s, linear 0.5s, opacity 0.5s;
+    height: 100vh;
+
+    .aside_links {
+      display: block;
+      opacity: 1;
+      margin-top: 50px;
+    }
+
+    ul li a {
+      padding: 20px 10px;
+      display: block;
+      font-size: 24px;
+    }
+  }
+
+  .chart {
+    display: block;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .chart-row {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .date-picker {
+    display: block;
+  }
+
+  .input-container input {
+    display: block;
+    border: 1px solid $main-light;
+    margin: 0 auto;
+  }
+
+  .input-container {
+    border: none;
+  }
+
+  .input-container span {
+    display: none;
+  }
+
+  .graph img {
+    width: 100%;
+  }
+
+  .link_row {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .link_icons {
+    justify-content: space-evenly;
+    margin: 15px 0;
+    opacity: 1;
+  }
+
+  .link_name,
+  .link_href {
+    margin: 15px 0;
+  }
+
+  .field  label {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .field input {
+    width: 100%;
+    
+  }
+
+  .field {
+    display: block;
+    width: 100%;
+  }
+}

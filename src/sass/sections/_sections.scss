@@ -1,10 +1,13 @@
 *,
 *::before,
 *::after {
-  font-family: $brand-font;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: $brand-font;
 }
 
 // SIDEBAR
@@ -19,6 +22,7 @@
   padding: 0;
   text-align: left;
   z-index: 2;
+  left: 0px;
 }
 
 .aside_logo {
@@ -31,10 +35,11 @@
 
 .aside_logo i {
   color: $main-light;
+  display: none;
 }
 
 .aside_logo img {
-  width: 100px;
+  opacity: 1;
 }
 
 .aside_nav_links li a {
@@ -45,6 +50,7 @@
   display: block;
   width: 100%;
   padding: 10px 7px;
+  border-left: 2px solid transparent;
 
   &:hover {
     color: $main-lighten;
@@ -118,7 +124,6 @@ em {
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid $main-ultra-light;
-  border-top: 2px solid $main-ultra-light;
 }
 
 .input-container {
@@ -135,6 +140,7 @@ em {
     border: none;
     padding: 10px;
     color: $main-light;
+    margin-left: 2px;
 
     &:nth-of-type(1) {
       border-right: 1px solid $main-light;
@@ -147,60 +153,26 @@ em {
 .table {
   color: $main-light;
   margin: 0 auto;
-  width: 50%;
+  width: 900px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
-
 }
 
-.table {
-  margin: 20px auto;
-  border-collapse: collapse;
-  font-size: $secondary-font;
-  text-align: center;
-
-  &__row {
-    border-bottom: 2px solid $main-ultra-light;
-    padding: 5px 0;
-    width: 100%;
-
-    &:hover {
-        background: $main-ultra-light;
-  
-        .table__icon {
-          opacity: 1;
-        }
-    }
-  }
-
-  td[class^='table__'] {
-    padding: 20px 10px;
-    width: 33%;
-    font-weight: 300;
-  }
-  &__title {
-    text-align: left;
-    font-size: $secondary-font;
-    font-weight: 600;
-  }
-
-  &__data {
-    text-align: right;
-    padding-right: 15px;
-  }
-
-  &__icon {
-    opacity: 0;
-
-    > *:hover {
-      opacity: 1;
-      color: $warning-light;
-      cursor: pointer;
-    }
-  }
+.chart-row {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $main-lighten;
+  margin: 0 20px;
+  padding: 10px 0;
 }
 
+.chart {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 // graph
 
 .graph img {
@@ -213,4 +185,107 @@ em {
 .table__link a {
   text-decoration: none;
   color: $info-color;
+}
+
+// PERSONAL DATA
+
+.registration_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+}
+
+.field label {
+  width: 140px;
+  display: block;
+  float: left;
+  text-align: left;
+  color: $main-light;
+}
+
+.field input {
+  height: 36px;
+  width: 300px;
+  color: $main-light;
+  padding: 5px;
+}
+
+.form_border {
+  border-top: 1px solid $main-light;
+  padding-top: 20px;
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  & > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+  }
+
+  header {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+}
+
+// .modal-close {
+//   color: #aaa;
+//   line-height: 50px;
+//   font-size: 80%;
+//   position: absolute;
+//   right: 0;
+//   text-align: center;
+//   top: 0;
+//   width: 70px;
+//   text-decoration: none;
+//   &:hover {
+//     color: black;
+//   }
+// }
+
+.modal_options {
+  display: flex;
+  padding: 10px 20px 0 20px;
+}
+
+.modal_question {
+  text-align: center;
+  border-bottom: 1px solid $main-lighten;
+  padding-bottom: 30px;
+  color: $main-light;
+}
+
+.modal_options .btn-success {
+  margin-left: 15px;
 }

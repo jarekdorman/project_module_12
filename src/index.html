@@ -14,7 +14,7 @@
     <aside class="aside">
         <div class="aside_logo">
             <img src="/images/logo.png" alt="">
-            <i class="fas fa-bars fa-lg"></i>
+            <i class="fas fa-bars fa-lg hamburger"></i>
         </div>
         <div class="aside_links">
             <ul class="aside_nav_links">
@@ -56,10 +56,24 @@
                 </a>
             </li>
             <li>
-                <a class="icon-quit" href="#logout"></a>
+                <a class="icon-quit" href="#open-modal"></a>
             </li>
         </ul>
     </nav>
+    <div id="open-modal" class="modal-window">
+        <div>
+            <div class="modal_question">DO YOU REALLY WANT TO QUIT?</div>
+            <div class="modal_options">
+                <div class="cancel">
+                    <a href="#" title="Close" class="modal-close"><button class="btn-light">Cancel</button></a>
+                </div>
+                <div class="quit">
+                    <button class="btn-success">Quit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <main>
         <div class="container">
             <section id="general" class="general">
@@ -74,152 +88,118 @@
                 </div>
                 <div class="table">
                     <div class="row">
-                        <table class="table">
-                            <tr class="table__row">
-                                <td class="table__title">Visit Signups</td>
-                                <td class="table__data">124</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__title">FTD</td>
-                                <td class="table__data">445</td>
-                            </tr>
-                        </table>
-                        <table class="table">
-                            <tr class="table__row">
-                                <td class="table__title">Net Deposit</td>
-                                <td class="table__data">564</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__title">Turn Over</td>
-                                <td class="table__data">432</td>
-                            </tr>
-                        </table>
+                        <div class="chart">
+                            <div class="chart-row">
+                                <div class="chart_row_name">Visit Signups</div>
+                                <div class="chart_row_number">124</div>
+                            </div>
+                            <div class="chart-row">
+                                <div class="chart_row_name">Net deposit</div>
+                                <div class="chart_row_number">564</div>
+                            </div>
+                            <div class="chart-row">
+                                <div class="chart_row_name">FTD</div>
+                                <div class="chart_row_number">445</div>
+                            </div>
+                            <div class="chart-row">
+                                <div class="chart_row_name">Turn over</div>
+                                <div class="chart_row_number">432</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="graph">
                     <h3>Earnings chart</h3>
                     <img src="/images/graph.png" alt="">
                 </div>
-
             </section>
         </div>
         <div class="container">
             <section id="links">
                 <h2>Links</h2>
                 <button class="btn-success">+ add new</button>
-                <div class="row">
-                    <table class="table">
-                        <tr class="table__row">
-                            <td class="table__title">Home Page</td>
-                            <td class="table__link">
-                                <a href="http://www.homepage.com">http://www.homepage.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Currently offer</td>
-                            <td class="table__link">
-                                <a href="http://www.currently.com">http://www.currently.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Blurpix</td>
-                            <td class="table__link">
-                                <a href="http://www.blurpix.com">http://www.blurpix.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Your Site</td>
-                            <td class="table__link">
-                                <a href="http://www.yoursite.com">http://www.yoursite.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Google</td>
-                            <td class="table__link">
-                                <a href="http://www.google.com">http://www.google.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Facebook</td>
-                            <td class="table__link">
-                                <a href="http://www.facebook.com">http://www.facebook.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Dashboard</td>
-                            <td class="table__link">
-                                <a href="http://www.dashboard.com">http://www.dashboard.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Blurax</td>
-                            <td class="table__link">
-                                <a href="http://www.blurax.com">http://www.blurax.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Home Page</td>
-                            <td class="table__link">
-                                <a href="http://www.homepage.com">http://www.homepage.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Piece of Wine</td>
-                            <td class="table__link">
-                                <a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Twitter</td>
-                            <td class="table__link">
-                                <a href="http://www.twitter.com">http://www.twitter.com</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="link_table">
+                    <div class="link_row">
+                        <div class="link_name">Home page</div>
+                        <div class="link_href"><a href="http://www.homepage.com">http://www.homepage.com</a></div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Currently offer</div>
+                        <div class="link_href"><a href="http://www.currently offer.com">http://www.currently
+                                offer.com</a></div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Blurpix</div>
+                        <div class="link_href"><a href="http://www.blurpix.com">http://www.blurpix.com</a></div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Your site</div>
+                        <div class="link_href"><a href="http://www.yoursite.com">http://www.yoursite.com</a></div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Google</div>
+                        <div class="link_href"><a href="http://www.google.com">http://www.google.com</a></div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Facebook</div>
+                        <div class="link_href"><a href="http://www.facebook.com">http://www.facebook.com</a></div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Dashboard</div>
+                        <div class="link_href"><a href="http://www.dashboard.com">http://www.dashboard.com</a></div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Blurax</div>
+                        <div class="link_href"><a href="http://www.blurax.com">http://www.blurax.com</a></div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Piece of Wine</div>
+                        <div class="link_href"><a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Twitter</div>
+                        <div class="link_href"><a href="http://www.twiiter.com">http://www.twiiter.com</a></div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
                 </div>
                 <button class="btn-success">+ add new</button>
             </section>
@@ -228,74 +208,123 @@
             <section id="banners">
                 <h2>Banners</h2>
                 <button class="btn-success">+ add new</button>
-                <div class="row">
-                    <table class="table">
-                        <tr class="table__row">
-                            <td class="table__title">Banner Main</td>
-                            <td class="table__link">
-                                <a href="http://website.com/bannermain.gif<">http://website.com/bannermain.gif</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Sign up banner</td>
-                            <td class="table__link">
-                                <a href="http://website.com/signup.gif">http://website.com/signup.gif</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Banner left side</td>
-                            <td class="table__link">
-                                <a href="http://website.com/leftside.gif">http://website.com/leftside.gif</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Vertical banner</td>
-                            <td class="table__link">
-                                <a href="http://website.com/vert.gif">http://website.com/vert.gif</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Front banner</td>
-                            <td class="table__link">
-                                <a href="http://website.com/front.gif">http://website.com/front.gif</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__title">Horizontal banner</td>
-                            <td class="table__link">
-                                <a href="http://website.com/horizontal.gif">http://website.com/horizontal.gif</a>
-                            </td>
-                            <td class="table__icon">
-                                <a class="icon-links"></a>
-                                <a class="icon-trash"></a>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="link_table">
+                    <div class="link_row">
+                        <div class="link_name">Banner main</div>
+                        <div class="link_href"><a
+                                href="http://wwww.website.com/bannermain.gif">http://wwww.website.com/bannermain.gif</a>
+                        </div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Sign up banner</div>
+                        <div class="link_href"><a
+                                href="http://wwww.website.com/Signupbanner.gif">http://wwww.website.com/Signupbanner.gif</a>
+                        </div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Banner left side</div>
+                        <div class="link_href"><a
+                                href="http://wwww.website.com/bannerleftside.gif">http://wwww.website.com/bannerleftside.gif</a>
+                        </div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Vertical banner</div>
+                        <div class="link_href"><a
+                                href="http://wwww.website.com/verticalbanner.gif">http://wwww.website.com/verticalbanner.gif</a>
+                        </div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Horizontal banner</div>
+                        <div class="link_href"><a
+                                href="http://wwww.website.com/horizonatalbanner.gif">http://wwww.website.com/horizonatalbanner.gif</a>
+                        </div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
+                    <div class="link_row">
+                        <div class="link_name">Front banner</div>
+                        <div class="link_href"><a
+                                href="http://wwww.website.com/frontbanner.gif">http://wwww.website.com/frontbanner.gif</a>
+                        </div>
+                        <div class="link_icons">
+                            <div class="icon-links"></div>
+                            <div class="icon-trash"></div>
+                        </div>
+                    </div>
                 </div>
+
                 <button class="btn-success">+ add new</button>
             </section>
-            </div>
+        </div>
+        <div class="container">
+            <section id="personal-data">
+                <h2>Personal Data</h2>
+                <form class="registration_form" action="" method="POST">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input name="name" type="text" required>
+                    </div>
+                    <div class="field">
+                        <label for="surname">Surname</label>
+                        <input name="surname" type="text" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input name="email" type="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input name="phone" type="text">
+                    </div>
+                    <div class="field form_border">
+                        <label for="skype">Skype</label>
+                        <input name="skype" type="text">
+                    </div>
+                    <div class="field">
+                        <label for="msn">Msn</label>
+                        <input name="msn" type="text">
+                    </div>
+                    <div class="field">
+                        <label for="icq">Icq</label>
+                        <input name="icq" type="text">
+                    </div>
+                    <div class="field form_border">
+                        <label for="wallet">Wallet</label>
+                        <input name="wallet" type="text">
+                    </div>
+                    <div class="field form_border">
+                        <label for="password">Password</label>
+                        <input name="password" type="password">
+                    </div>
+                    <div class="field">
+                        <label for="confirm_password">Repeat</label>
+                        <input name="confirm_password" type="password">
+                    </div>
+                    <button class="btn-success" type="submit">Save</button>
+
+                </form>
+            </section>
+        </div>
     </main>
+    <script src="js/script.js" type="module"></script>
 </body>
 
 </html>
