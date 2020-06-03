@@ -38,6 +38,14 @@
                 </li>
             </ul>
         </div>
+        <div class="aside_chat">
+            <div class="chat_img">
+                <img src="/images/photo.png" alt="">
+            </div>
+            <div class="aside_chat_name">
+                <p>Mikheal E.</p>
+            </div>
+        </div>
     </aside>
     <nav class="top_bar">
         <ul class="nav_links">
@@ -50,7 +58,7 @@
                 <a class="icon-notification" href="#notification"></a>
             </li>
             <li>
-                <a href="#login">
+                <a href="#modal__login" class="login" id="loginczyk">
                     <span class="icon-profile"></span>
                     <em>Leonardo DiCaprio</em>
                 </a>
@@ -60,20 +68,8 @@
             </li>
         </ul>
     </nav>
-    <div id="open-modal" class="modal-window">
-        <div>
-            <div class="modal_question">DO YOU REALLY WANT TO QUIT?</div>
-            <div class="modal_options">
-                <div class="cancel">
-                    <a href="#" title="Close" class="modal-close"><button class="btn-light">Cancel</button></a>
-                </div>
-                <div class="quit">
-                    <button class="btn-success">Quit</button>
-                </div>
-            </div>
-        </div>
     </div>
-    </div>
+
     <main>
         <div class="container">
             <section id="general" class="general">
@@ -110,7 +106,9 @@
                 </div>
                 <div class="graph">
                     <h3>Earnings chart</h3>
-                    <img src="/images/graph.png" alt="">
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
             </section>
         </div>
@@ -324,7 +322,33 @@
             </section>
         </div>
     </main>
-    <script src="js/script.js" type="module"></script>
+
+    <!-- MODALS -->
+
+    <div class="overlay" id="overlay">
+        <div class="modal__quit">
+            <h2>
+                <span>Do you really want to Quit?</span>
+                <span class="icon-close js--close-modal"></span>
+            </h2>
+            <button class="btn-light">Cancel</button>
+            <button class="btn-success js--close-modal">Quit</button>
+        </div>
+        <div class="modal__login" id="modal-login">
+            <h2>Login</h2>
+            <div class="input-container">
+              <span class="icon-personaldata"></span>
+              <input name="login-username" type="text" placeholder="username" />
+              <span class="icon-password"></span>
+              <input name="login-password" type="password" placeholder="password" />
+            </div>
+            <button class="btn --rectangle">Enter</button>
+          </div>
+    </div>
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="js/script.js" type="module"></script>
 </body>
 
 </html>

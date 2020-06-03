@@ -63,6 +63,33 @@ body {
   list-style: none;
 }
 
+.aside_chat {
+  display: flex;
+  color: $info-color;
+  justify-content: center;
+  border-top: 2px solid $main-light;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.aside_chat_name {
+  align-self: center;
+  margin-left: 7px;
+}
+
+.chat_img::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  transform: translate(-100%, -5%);
+  content: '';
+  background: $success-dark;
+}
+
+
+
 // TOP BAR
 
 .top_bar {
@@ -173,11 +200,11 @@ em {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 // graph
 
-.graph img {
-  width: 900px;
-  margin: 30px 0 80px 0;
+.chart-container {
+  padding: 40px;
 }
 
 // LINKS
@@ -220,72 +247,3 @@ em {
   padding-top: 20px;
 }
 
-.modal-window {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s;
-
-  &:target {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  & > div {
-    width: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2em;
-    background: #ffffff;
-  }
-
-  header {
-    font-weight: bold;
-  }
-
-  h1 {
-    font-size: 150%;
-    margin: 0 0 15px;
-  }
-}
-
-// .modal-close {
-//   color: #aaa;
-//   line-height: 50px;
-//   font-size: 80%;
-//   position: absolute;
-//   right: 0;
-//   text-align: center;
-//   top: 0;
-//   width: 70px;
-//   text-decoration: none;
-//   &:hover {
-//     color: black;
-//   }
-// }
-
-.modal_options {
-  display: flex;
-  padding: 10px 20px 0 20px;
-}
-
-.modal_question {
-  text-align: center;
-  border-bottom: 1px solid $main-lighten;
-  padding-bottom: 30px;
-  color: $main-light;
-}
-
-.modal_options .btn-success {
-  margin-left: 15px;
-}

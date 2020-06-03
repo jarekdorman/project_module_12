@@ -21,15 +21,22 @@
     },
     "oneDarkPro.vivid": true,
     "cSpell.ignoreWords": [
+        "amet",
         "blurax",
         "blurpix",
         "crossorigin",
         "icon",
         "icon personaldata",
         "icon postback",
+        "import",
+        "import mixins",
+        "mixins",
+        "modalu",
         "personaldata",
         "postback",
         "sarif",
-        "signups"
+        "scrollbar",
+        "signups",
+        "witaj"
     ]
 }

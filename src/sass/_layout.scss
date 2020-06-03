@@ -32,7 +32,8 @@ main {
 
     .link_icons {
       opacity: 1;
-      &:hover {
+
+      & > *:hover {
         color: $warning-dark;
       }
     }
