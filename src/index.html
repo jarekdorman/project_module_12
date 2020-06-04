@@ -58,7 +58,7 @@
                 <a class="icon-notification" href="#notification"></a>
             </li>
             <li>
-                <a href="#modal__login" class="login" id="loginczyk">
+                <a href="#modal__login" class="login">
                     <span class="icon-profile"></span>
                     <em>Leonardo DiCaprio</em>
                 </a>
@@ -326,29 +326,69 @@
     <!-- MODALS -->
 
     <div class="overlay" id="overlay">
-        <div class="modal__quit">
+        <div class="modal" id="modal-quit">
             <h2>
                 <span>Do you really want to Quit?</span>
                 <span class="icon-close js--close-modal"></span>
             </h2>
+            <div class="border_bottom"></div>
             <button class="btn-light">Cancel</button>
             <button class="btn-success js--close-modal">Quit</button>
         </div>
-        <div class="modal__login" id="modal-login">
-            <h2>Login</h2>
+        <div class="modal" id="login">
+            <h2>
+                <span>Login</span>
+                <span class="icon-close js--close-modal login-exit"></span>
+            </h2>
+            <div id="login-info">
             <div class="input-container">
-              <span class="icon-personaldata"></span>
-              <input name="login-username" type="text" placeholder="username" />
-              <span class="icon-password"></span>
-              <input name="login-password" type="password" placeholder="password" />
+                <span class="icon-personaldata"></span>
+                <input name="login-username" type="text" placeholder="username" />
+                <span class="icon-password"></span>
+                <input name="login-password" type="password" placeholder="password" />
             </div>
-            <button class="btn --rectangle">Enter</button>
-          </div>
+            </div>
+            <div class="border_bottom"></div>
+            <button class="btn-success">Enter</button>
+        </div>
+        <div class="modal" id="chat">
+            <h2>
+                <span>Online chat with personal manager</span>
+                <span class="icon-close js--close-modal chat-exit"></span>
+            </h2>
+            <div class="border_bottom"></div>
+            <div class="modal_chat">
+                <div class="chat_modal_img">
+                    <img src="/images/photo.png" alt="">
+                </div>
+                <div class="aside_chat_name">
+                    <p>Mikheal E.</p>
+                </div>
+            </div>
+            <div class="border_bottom"></div>
+            <div class="modal_chat_convo">
+                <div class="outgoing_chat">
+                    <p>Hello. Can I help You?</p>
+                </div>
+                <div class="incoming_chat">
+                    <p>Hello! I would like to know about Postback.</p>
+                </div>
+                <div class="outgoing_chat">
+                    <p>ok. 5 min</p>
+                </div>
+            </div>
+            <div class="border_bottom"></div>
+            <div class="chat_input">
+                <input type="text" placeholder="Enter your message">
+                <button class="btn-success">Send</button>
+
+            </div>
+        </div>
     </div>
-    
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-        <script src="js/script.js" type="module"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js" type="module"></script>
 </body>
 
 </html>

@@ -33,19 +33,20 @@ main {
     .link_icons {
       opacity: 1;
 
-      & > *:hover {
-        color: $warning-dark;
-      }
+      //   // &>*:hover {
+      //   //   color: $warning-dark;
+      //   // }
+      // }
     }
   }
-}
 
-.link_href a {
-  text-decoration: none;
-  color: $info-color;
-}
+  .link_href a {
+    text-decoration: none;
+    color: $info-color;
+  }
 
-.link_icons {
-  display: flex;
-  opacity: 0;
+  .link_icons {
+    display: flex;
+    opacity: 0;
+  }
 }

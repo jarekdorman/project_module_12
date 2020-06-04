@@ -70,6 +70,7 @@ body {
   border-top: 2px solid $main-light;
   margin-top: 20px;
   padding-top: 20px;
+  cursor: pointer;
 }
 
 .aside_chat_name {
@@ -87,8 +88,6 @@ body {
   content: '';
   background: $success-dark;
 }
-
-
 
 // TOP BAR
 
@@ -246,4 +245,3 @@ em {
   border-top: 1px solid $main-light;
   padding-top: 20px;
 }
-
