@@ -1,5 +1,5 @@
-/* global */
 /* eslint no-undef: "error" */
+/*global Chart */
 
 // HAMBURGER MENU
 
@@ -54,7 +54,6 @@ const modalQuit = document.getElementById('modal-quit');
 const modalLogin = document.getElementById('login');
 const modalChat = document.getElementById('chat');
 
-
 for (let logoutButton of logoutButtons) {
   logoutButton.addEventListener('click', function () {
     openModal(modalQuit);
@@ -103,4 +102,30 @@ var chart = new Chart(ctx, {
       },
     ],
   },
+});
+console.log(chart);
+
+// CHAT APP
+
+const messages = document.getElementById('messages');
+
+const textbox = document.getElementById('input-chat');
+const button = document.getElementById('send-chat');
+
+button.addEventListener('click', function () {
+  const newMessage = document.createElement('li');
+
+  newMessage.innerHTML = textbox.value;
+  messages.appendChild(newMessage);
+  textbox.value = '';
+});
+
+document.addEventListener('keyup', function (m) {
+  if (m.keyCode === 13) {
+    const newMessage = document.createElement('li');
+
+    newMessage.innerHTML = textbox.value;
+    messages.appendChild(newMessage);
+    textbox.value = '';
+  }
 });

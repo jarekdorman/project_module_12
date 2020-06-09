@@ -68,8 +68,6 @@
             </li>
         </ul>
     </nav>
-    </div>
-
     <main>
         <div class="container">
             <section id="general" class="general">
@@ -127,8 +125,8 @@
                     </div>
                     <div class="link_row">
                         <div class="link_name">Currently offer</div>
-                        <div class="link_href"><a href="http://www.currently offer.com">http://www.currently
-                                offer.com</a></div>
+                        <div class="link_href"><a href="http://www.currentlyoffer.com">http://www.currentlyoffer.com</a>
+                        </div>
                         <div class="link_icons">
                             <div class="icon-links"></div>
                             <div class="icon-trash"></div>
@@ -268,53 +266,52 @@
                         </div>
                     </div>
                 </div>
-
                 <button class="btn-success">+ add new</button>
             </section>
         </div>
         <div class="container">
             <section id="personal-data">
                 <h2>Personal Data</h2>
-                <form class="registration_form" action="" method="POST">
+                <form class="registration_form" action="/action_page.php" method="POST">
                     <div class="field">
                         <label for="name">Name</label>
-                        <input name="name" type="text" required>
+                        <input id="name" name="name" type="text" required>
                     </div>
                     <div class="field">
                         <label for="surname">Surname</label>
-                        <input name="surname" type="text" required>
+                        <input id="surname" name="surname" type="text" required>
                     </div>
                     <div class="field">
                         <label for="email">Email</label>
-                        <input name="email" type="email" required>
+                        <input id="email" name="email" type="email" required>
                     </div>
                     <div class="field">
                         <label for="phone">Phone Number</label>
-                        <input name="phone" type="text">
+                        <input id="phone" name="phone" type="text">
                     </div>
                     <div class="field form_border">
                         <label for="skype">Skype</label>
-                        <input name="skype" type="text">
+                        <input id="skype" name="skype" type="text">
                     </div>
                     <div class="field">
                         <label for="msn">Msn</label>
-                        <input name="msn" type="text">
+                        <input id="msn" name="msn" type="text">
                     </div>
                     <div class="field">
                         <label for="icq">Icq</label>
-                        <input name="icq" type="text">
+                        <input id="icq" name="icq" type="text">
                     </div>
                     <div class="field form_border">
                         <label for="wallet">Wallet</label>
-                        <input name="wallet" type="text">
+                        <input id="wallet" name="wallet" type="text">
                     </div>
                     <div class="field form_border">
                         <label for="password">Password</label>
-                        <input name="password" type="password">
+                        <input id="password" name="password" type="password">
                     </div>
                     <div class="field">
                         <label for="confirm_password">Repeat</label>
-                        <input name="confirm_password" type="password">
+                        <input id="confirm_password" name="confirm_password" type="password">
                     </div>
                     <button class="btn-success" type="submit">Save</button>
 
@@ -341,12 +338,12 @@
                 <span class="icon-close js--close-modal login-exit"></span>
             </h2>
             <div id="login-info">
-            <div class="input-container">
-                <span class="icon-personaldata"></span>
-                <input name="login-username" type="text" placeholder="username" />
-                <span class="icon-password"></span>
-                <input name="login-password" type="password" placeholder="password" />
-            </div>
+                <div class="input-container">
+                    <span class="icon-personaldata"></span>
+                    <input name="login-username" type="text" placeholder="username" />
+                    <span class="icon-password"></span>
+                    <input name="login-password" type="password" placeholder="password" />
+                </div>
             </div>
             <div class="border_bottom"></div>
             <button class="btn-success">Enter</button>
@@ -367,21 +364,18 @@
             </div>
             <div class="border_bottom"></div>
             <div class="modal_chat_convo">
-                <div class="outgoing_chat">
-                    <p>Hello. Can I help You?</p>
+                <div class="incoming_message">
+                    <p>hello how can i help you</p>
                 </div>
-                <div class="incoming_chat">
-                    <p>Hello! I would like to know about Postback.</p>
-                </div>
-                <div class="outgoing_chat">
-                    <p>ok. 5 min</p>
-                </div>
+
+                <ul id="messages">
+                    
+                </ul>
             </div>
             <div class="border_bottom"></div>
             <div class="chat_input">
-                <input type="text" placeholder="Enter your message">
-                <button class="btn-success">Send</button>
-
+                <input id="input-chat" type="text" placeholder="Enter your message">
+                <button id="send-chat" class="btn-success">Send</button>
             </div>
         </div>
     </div>
